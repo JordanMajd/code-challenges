@@ -6,7 +6,7 @@ Solutions to the [Project Euler](https://projecteuler.net) challenges.
 
 Each solution is designed to run under 10 seconds execution time on my local machine.
 
-Each language I've written a solution has its own directory:
+Each programming language I've written solutions for has its own directory:
 
 - [Javascript](/javascript)
 
