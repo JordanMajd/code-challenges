@@ -8,6 +8,8 @@ Problem solutions are located in the [solution](/javascript/solution) directory.
 
 Each problem has a test located in the [test](/javascript/test) directory. Tests are named after the file they are testing, `p1.js`'s test would be `p1.test.js`.
 
+Each problem may have multiple solutions. Each solution is named by its number, for example `s0` is the first solution. The first solution is often less efficient, but very direct. The most efficient solution is always exported as `efficient`. So `p1`'s most efficient solution would be `p1.efficient`.
+
 Helper code is located in the [src](/javascript/src) directory.
 
 To install all dependencies:

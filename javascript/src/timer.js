@@ -21,7 +21,8 @@ Timer.prototype.start = function(_precision, _magnitude){
 }
 
 Timer.prototype.stop = function(){
-  return (process.hrtime(this.startTime)[1] / this.magnitude).toFixed(this.precision);
+  let end = process.hrtime(this.startTime)[1];
+  return (end / this.magnitude).toFixed(this.precision);
 }
 
 module.exports = Timer;

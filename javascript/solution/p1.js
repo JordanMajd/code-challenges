@@ -90,5 +90,6 @@ module.exports = {
   s1: s1,
   s1Sum: s1Sum,
   s2: s2,
-  s2Sum: s2Sum
+  s2Sum: s2Sum,
+  efficient: s2
 };
