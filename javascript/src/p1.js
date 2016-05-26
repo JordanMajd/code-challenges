@@ -21,6 +21,23 @@ function solution0(max){
   return sum;
 }
 
+// more efficient solution
+function solution1(max){
+
+  let sumThree = 0;
+  for(; sumThree < max; sumThree += 3){}
+
+  let sumFive = 0;
+  for(; sumFive < max; sumFive += 5){}
+
+  let sumFifteen = 0;
+  for(; sumFifteen < max; sumFifteen += 15){}
+
+  return sumThree + sumFive - sumFifteen;
+
+}
+
 module.exports = {
-  solution0: solution0
+  solution0: solution0,
+  solution1: solution1
 };
