@@ -60,8 +60,35 @@ function s1Sum(num, max){
   return sum;
 }
 
+/*
+ * s2
+ *
+ * summation formula solution
+ *
+ * Uses summation formula to sum 3, 5 and 15 less than max
+ * adds sums of 3 and 5 and subtracts sums of 15
+ */
+function s2(max){
+  return s2Sum(3, max) + s2Sum(5, max) - s2Sum(15, max);
+}
+
+/*
+ * s2Sum
+ *
+ * summation formula
+ *
+ *  k=1, k<n, ∑k = n(n+1)/2
+ */
+function s2Sum(num, max){
+  max--;
+  let n = parseInt(max / num, 10);
+  return num * n * (n + 1) / 2;
+}
+
 module.exports = {
   s0: s0,
   s1: s1,
-  s1Sum: s1Sum
+  s1Sum: s1Sum,
+  s2: s2,
+  s2Sum: s2Sum
 };

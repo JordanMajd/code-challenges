@@ -12,4 +12,4 @@ Each programming language I've written solutions for has its own directory:
 
 ## License
 
-All code is licensed under an MIT license, for further details see [LICENSE](/LICENSE)
+All code is licensed under an MIT license, for further details see [LICENSE](/LICENSE).
