@@ -1,8 +1,10 @@
 # Project Euler Javascript
 
-Problem solutions are located in the [src](/javascript/src) directory. Problems are named after their problem number, problem 1 for example would be `p1.js`.
+Problem solutions are located in the [solution](/javascript/solution) directory. Problems are named after their problem number, problem 1 for example would be `p1.js`.
 
 Each problem has a test located in the [test](/javascript/test) directory. Tests are named after the file they are testing, `p1.js`'s test would be `p1.test.js`.
+
+Helper code is located in the [src](/javascript/src) directory.
 
 To install all dependencies:
 
