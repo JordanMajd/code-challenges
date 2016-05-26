@@ -5,6 +5,11 @@ const timer = require('../timer');
 const expect = require('chai').expect;
 
 describe('solution0', function(){
+
+  it('works with given case', function(){
+    expect(p1.solution0(10)).to.equal(23);
+  });
+
   it('finds the sum of all the multiples of 3 or 5 below 1000', function(){
     expect(p1.solution0(1000)).to.equal(233168);
   });
