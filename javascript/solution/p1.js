@@ -10,6 +10,66 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 
+ /*
+  * s2
+  *
+  * summation formula solution
+  *
+  * Uses summation formula to sum 3, 5 and 15 less than max
+  * adds sums of 3 and 5 and subtracts sums of 15
+  */
+ function s2(max){
+   return s2Sum(3, max) + s2Sum(5, max) - s2Sum(15, max);
+ }
+
+ /*
+  * s2Sum
+  *
+  * summation formula
+  *
+  *  k=1, k<n, ∑k = n(n+1)/2
+  */
+ function s2Sum(num, max){
+   max--;
+   let n = parseInt(max / num, 10);
+   return num * n * (n + 1) / 2;
+ }
+
+ /*
+ * s1
+ *
+ * additive solution
+ *
+ * sums all increments of 3 less than max
+ * sums all increments of 5 less than max
+ * sums all increments of 15 less than max
+ * adds sums of 3 and 5 and subtracts sums of 15
+ */
+ function s1(max){
+   return s1Sum(3, max) + s1Sum(5, max) - s1Sum(15, max);
+ }
+
+ /*
+ * s1Sum
+ *
+ * helper function for s1
+ *
+ * sums all increments of num less than max
+ */
+ function s1Sum(num, max){
+   let sum = 0;
+   let inc = 0;
+
+   while(inc < max - num){
+     inc += num;
+     sum += inc;
+   }
+
+   return sum;
+ }
+
+
+
 /*
 * s0
 *
@@ -27,63 +87,6 @@ function s0(max){
   return sum;
 }
 
-/*
-* s1
-*
-* additive solution
-*
-* sums all increments of 3 less than max
-* sums all increments of 5 less than max
-* sums all increments of 15 less than max
-* adds sums of 3 and 5 and subtracts sums of 15
-*/
-function s1(max){
-  return s1Sum(3, max) + s1Sum(5, max) - s1Sum(15, max);
-}
-
-/*
-* s1Sum
-*
-* helper function for s1
-*
-* sums all increments of num less than max
-*/
-function s1Sum(num, max){
-  let sum = 0;
-  let inc = 0;
-
-  while(inc < max - num){
-    inc += num;
-    sum += inc;
-  }
-
-  return sum;
-}
-
-/*
- * s2
- *
- * summation formula solution
- *
- * Uses summation formula to sum 3, 5 and 15 less than max
- * adds sums of 3 and 5 and subtracts sums of 15
- */
-function s2(max){
-  return s2Sum(3, max) + s2Sum(5, max) - s2Sum(15, max);
-}
-
-/*
- * s2Sum
- *
- * summation formula
- *
- *  k=1, k<n, ∑k = n(n+1)/2
- */
-function s2Sum(num, max){
-  max--;
-  let n = parseInt(max / num, 10);
-  return num * n * (n + 1) / 2;
-}
 
 module.exports = {
   s0: s0,
