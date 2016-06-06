@@ -77,11 +77,12 @@
 *
 * loops through all numbers below max and checks if they are divisible by 3 or 5
 */
+
 function s0(min){
-  const sum = 0;
-  for(var i = 3; i <= sum; ++i){
-    if(i / 3 == 0 || i % 5 == 0){
-      return sum *= i;
+  let sum = 0;
+  for(var i = 3; i < max; i++){
+    if(((i % 3 === 0)) || i % 5 == 0){
+        sum += i;
     }
   }
   return sum;
