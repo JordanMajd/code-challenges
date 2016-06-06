@@ -79,8 +79,8 @@
 */
 function s0(max){
   let sum = 0;
-  for(let i = 3; i < max - 1; i++){
-    if((i % 3 === 0) || (i % 5 === 0)){
+  for(let i = 3; i < max; i++){
+    if(((i % 3 === 0)) || ((i % 5 === 0))){
       sum += i;
     }
   }
