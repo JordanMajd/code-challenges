@@ -28,12 +28,6 @@ To run all tests:
 npm test
 ```
 
-To run a specific test supply the test name as an argument to the command, for example to run the tests for problem 1:
-
-```bash
-npm test test/p1.test.js
-```
-
 ## License
 
 All code is licensed under an MIT license, for further details see [LICENSE](/LICENSE).
