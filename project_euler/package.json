@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/JordanMajd/project-euler.git"
+    "url": "git+ssh://git@github.com:JordanMajd/code-challenges.git"
   },
   "author": "Jordan Majd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JordanMajd/project-euler/issues"
+    "url": "https://github.com/JordanMajd/code-challenges/issues"
   },
-  "homepage": "https://github.com/JordanMajd/project-euler#readme",
+  "homepage": "https://github.com/JordanMajd/code-challenges#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
