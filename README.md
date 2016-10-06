@@ -17,6 +17,8 @@ Currently all code is written using Javascript. As I aggregate code, and project
 
 ## Algorithms
 
+- [Ripple Carry Adder](/algorithms/ripple_carry_adder)
+
 ## Challenges
 
 - [Project Euler](/project_euler/)
