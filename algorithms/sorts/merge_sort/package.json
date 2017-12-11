@@ -1,0 +1,26 @@
+{
+  "name": "merge_sort",
+  "version": "1.0.0",
+  "description": "Merge sort implementation.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:JordanMajd/code-challenges.git"
+  },
+  "author": "Jordan Majd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JordanMajd/code-challenges/issues"
+  },
+  "homepage": "https://github.com/JordanMajd/code-challenges#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
