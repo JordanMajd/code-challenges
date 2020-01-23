@@ -17,7 +17,7 @@ function consTest(){
 
 function lengthTest(){
 
- it('should return the length of the list', function(){
+ test('should return the length of the list', function(){
 
    let list = new Con(1, new Con(2, new Con(3)));
 
@@ -28,7 +28,7 @@ function lengthTest(){
 
 function isEmptyTest(){
 
-  it('should always return false', function(){
+  test('should always return false', function(){
 
     let list = new Con(1);
 
@@ -40,7 +40,7 @@ function isEmptyTest(){
 
 function mapTest(){
 
-  it('should run a mapping function for every con in the list', function(){
+  test('should run a mapping function for every con in the list', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 
@@ -51,7 +51,7 @@ function mapTest(){
 
   });
 
-  it('should return a new list the same length as the previous list', function(){
+  test('should return a new list the same length as the previous list', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 
@@ -60,7 +60,7 @@ function mapTest(){
     assert(mappedList.length() === 3, 'new list is same length as previous list');
   });
 
-  it('the cons returned by the mapping function are the cons of the new list', function(){
+  test('the cons returned by the mapping function are the cons of the new list', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 
@@ -75,7 +75,7 @@ function mapTest(){
 
 function reduceTest(){
 
-  it('should run a reducer function for every con in the list, front to back', function(){
+  test('should run a reducer function for every con in the list, front to back', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 
@@ -89,7 +89,7 @@ function reduceTest(){
 
   });
 
-  it('the value returned by the reducer function is the accumulation of all cons in list', function(){
+  test('the value returned by the reducer function is the accumulation of all cons in list', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 
@@ -101,7 +101,7 @@ function reduceTest(){
 
 function reduceRightTest(){
 
-  it('should run a reducer function for every con in the list, back to front', function(){
+  test('should run a reducer function for every con in the list, back to front', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
     let length = list.length();
@@ -115,7 +115,7 @@ function reduceRightTest(){
 
   });
 
-  it('the value returned by the reducer function is the accumulation of all cons in list', function(){
+  test('the value returned by the reducer function is the accumulation of all cons in list', function(){
 
     let list = new Con(1, new Con(2, new Con(3)));
 

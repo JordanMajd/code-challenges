@@ -15,7 +15,7 @@ function nilTest(){
 
 function isEmptyTest(){
 
-  it('isEmpty is always true', function(){
+  test('isEmpty is always true', function(){
 
     let nil = new Nil();
 
@@ -26,7 +26,7 @@ function isEmptyTest(){
 
 function mapTest(){
 
-  it('map returns reference to iteself', function(){
+  test('map returns reference to iteself', function(){
 
     let nil = new Nil();
 
@@ -37,7 +37,7 @@ function mapTest(){
 
 function reduceTest(){
 
-  it('reduce returns accumulator', function(){
+  test('reduce returns accumulator', function(){
 
     let nil = new Nil();
 
@@ -49,7 +49,7 @@ function reduceTest(){
 
 function reduceRightTest(){
 
-  it('reduce returns accumulator', function(){
+  test('reduce returns accumulator', function(){
 
     let nil = new Nil();
 
