@@ -11,8 +11,8 @@ let lr2Sorted = [2,6,6,6,7,7,7,7,13,16,17,17,23,23,24,24,26,27,30,31,31,31,32,32
 
 describe('mergesort', function(){
   test('Takes an array and sorts it in place', function(){
-    expect(mergesort([88, 74, 78, 45, 23, 1, 10, 8, 100])).to.deep.equal([1, 8, 10, 23, 45, 74, 78, 88, 100]);
-    expect(mergesort(lr)).to.deep.equal(lrSorted);
-    expect(mergesort(lr2)).to.deep.equal(lr2Sorted);
+    expect(mergesort([88, 74, 78, 45, 23, 1, 10, 8, 100])).toMatchObject([1, 8, 10, 23, 45, 74, 78, 88, 100]);
+    expect(mergesort(lr)).toMatchObject(lrSorted);
+    expect(mergesort(lr2)).toMatchObject(lr2Sorted);
   });
 });
