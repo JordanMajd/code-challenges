@@ -23,18 +23,18 @@ function ms(arr, low, high) {
 
   let mid = Math.floor((high + low) / 2);
 
-  // subsection into sections with 1 element
+  // break down into sub arrays, eventually with only a single element
   ms(arr, low, mid); // left
   ms(arr, mid, high); // right
 
-  // merge subsections
+  // merge sublists
   return merge(arr, low, mid, high);
 }
 
 
 function merge(arr, low, mid, high) {
 
-  // create work array
+  // create work array, this could be half the size if I adjust the indicies
   let copy = arr.slice();
 
   let arrIdx = low; // array index
