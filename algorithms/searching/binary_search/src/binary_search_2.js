@@ -12,7 +12,7 @@ function binarysearch(item, arr){
     return -1;
   }
 
-  return binarySearchF(item, arr, 0, arr.length);
+  return binarySearchF(item, arr, 0, arr.length - 1);
 }
 
 function binarySearchF(item, arr, left, right) {
