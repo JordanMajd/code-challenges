@@ -23,6 +23,9 @@ npm test
 # run all tests for topic
 npm test algorithms/sorting/
 
+# run any test including binary_search
+npm test binary_search
+
 # run specific test
 npm test binary_search_2.test.js
 ```
