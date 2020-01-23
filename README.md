@@ -2,9 +2,9 @@
 
 As a programmer, it is important to continue to challenge myself daily. The ability to problem solve is foundational to being an excellent developer. Understanding data structures and algorithms opens doors to new solutions and sheds light on alternative thought processes to solve problems. This repository serves as a place for me to improve on my understanding of:
 
-- Problem solving.
-- Data structures.
 - Algorithms.
+- Data structures.
+- Problem solving.
 
 ## Getting Started
 
