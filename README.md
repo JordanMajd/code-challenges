@@ -9,6 +9,20 @@ As a programmer, it is important to continue to challenge myself daily. The abil
 
 Currently all code is written using Javascript. As I aggregate code, and projects from the last several years this repository will be reorganized to include solutions in other languages.
 
+## Getting Started
+
+To install all dependencies:
+
+```bash
+npm install
+```
+
+To run tests:
+
+```bash
+npm test-a-bs
+```
+
 # Topics
 
 ## Data Structures

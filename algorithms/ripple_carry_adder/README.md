@@ -3,19 +3,7 @@
 ## About
 
 
-## Getting Started
 
-To install all dependencies:
-
-```bash
-npm install
-```
-
-To run all tests:
-
-```bash
-npm test
-```
 
 ## License
 

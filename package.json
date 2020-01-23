@@ -1,13 +1,10 @@
 {
-  "name": "binary_search",
+  "name": "code-challenges",
   "version": "1.0.0",
-  "description": "Binary search implementation.",
+  "description": "Project Euler solutions",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test-a-bs": "mocha ./algorithms/searching/binary_search/test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +17,7 @@
   },
   "homepage": "https://github.com/JordanMajd/code-challenges#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
   }
 }
