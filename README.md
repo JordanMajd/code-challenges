@@ -30,34 +30,34 @@ npm test binary_search
 npm test binary_search_2.test.js
 ```
 
-# Topics
+## Topics
 
-## Algorithms
+### Algorithms
 
 - [Ripple Carry Adder](/algorithms/ripple_carry_adder)
 
-### Searching
+#### Searching
 
 - [Binary Search](/algorithms/searching/binary_search)
 
-### Sorting
+#### Sorting
 
 - [Bubble Sort](/algorithms/sorting/bubble_sort)
 - [Merge Sort](/algorithms/sorting/merge_sort)
 - [Quick Sort](/algorithms/sorting/quick_sort)
 - [Selection Sort](/algorithms/sorting/selection_sort)
 
-## Data Structures
+### Data Structures
 
 - [Functional Linked List](/data_structures/functional_linked_list/)
 
-## Interviews
+### Interviews
 
 These are questions that I've encountered in interviews.
 
-- [Justified](/interviews/justified)
+- [Justify](/interviews/justify)
 
-## Challenges
+### Challenges
 
 - [Project Euler](/project_euler/)
 
