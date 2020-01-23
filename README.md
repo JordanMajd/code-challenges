@@ -20,7 +20,8 @@ npm install
 To run tests:
 
 ```bash
-npm test-a-bs
+npm run test-search
+npm run test-sort
 ```
 
 # Topics

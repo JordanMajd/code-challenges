@@ -4,7 +4,9 @@
   "description": "Project Euler solutions",
   "main": "index.js",
   "scripts": {
-    "test-a-bs": "mocha ./algorithms/searching/binary_search/test/*.test.js"
+    "test": "mocha",
+    "test-search": "mocha ./algorithms/searching/**/test/*.test.js",
+    "test-sort": "mocha ./algorithms/sorting/**/test/*.test.js"
   },
   "repository": {
     "type": "git",
