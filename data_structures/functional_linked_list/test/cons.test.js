@@ -1,128 +1,90 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 const Con = require('../src/cons');
 
-describe('Cons', consTest);
+test('Length should return the length of the list', function () {
+  let list = new Con(1, new Con(2, new Con(3)));
+  expect(list.length()).toBe(3);
+});
 
-function consTest(){
-  describe('length', lengthTest);
-  describe('isEmpty', isEmptyTest);
-  describe('map', mapTest);
-  describe('reduce', reduceTest);
-  describe('reduceRight', reduceRightTest);
-}
-
-
-function lengthTest(){
-
- it('should return the length of the list', function(){
-
-   let list = new Con(1, new Con(2, new Con(3)));
-
-   assert(list.length(), 'length is 3');
- });
-
-}
-
-function isEmptyTest(){
-
-  it('should always return false', function(){
-
-    let list = new Con(1);
-
-    assert(list.isEmpty === false, 'isEmpty is false');
-  });
-
-}
+test('isEmpty should always return false', function () {
+  let list = new Con(1);
+  expect(list.isEmpty).toBe(false);
+});
 
 
-function mapTest(){
+test('should run a mapping function for every con in the list', function () {
 
-  it('should run a mapping function for every con in the list', function(){
+  let list = new Con(1, new Con(2, new Con(3)));
 
-    let list = new Con(1, new Con(2, new Con(3)));
+  let count = 0;
+  list.map(() => count++);
 
-    let count = 0;
-    list.map(() => count++);
+  expect(count).toBe(3);
+});
 
-    assert(count === 3, 'count is 3');
+test('should return a new list the same length as the previous list', function () {
 
-  });
+  let list = new Con(1, new Con(2, new Con(3)));
 
-  it('should return a new list the same length as the previous list', function(){
+  let mappedList = list.map((h) => h);
 
-    let list = new Con(1, new Con(2, new Con(3)));
+  expect(mappedList.length()).toBe(3);
+});
 
-    let mappedList = list.map((h) => h);
+test('the cons returned by the mapping function are the cons of the new list', function () {
 
-    assert(mappedList.length() === 3, 'new list is same length as previous list');
-  });
+  let list = new Con(1, new Con(2, new Con(3)));
 
-  it('the cons returned by the mapping function are the cons of the new list', function(){
+  let mappedList = list.map((h) => h * 2);
 
-    let list = new Con(1, new Con(2, new Con(3)));
+  expect(mappedList.head).toBe(2);
+  expect(mappedList.tail.head).toBe(4);
+  expect(mappedList.tail.tail.head).toBe(6);
+});
 
-    let mappedList = list.map((h) => h * 2);
+test('should run a reducer function for every con in the list, front to back', function () {
 
-    assert(mappedList.head === 2, 'first con is correct');
-    assert(mappedList.tail.head === 4, 'second con is correct');
-    assert(mappedList.tail.tail.head === 6, 'third con is correct');
-  });
+  let list = new Con(1, new Con(2, new Con(3)));
 
-}
+  let count = list.reduce(function (acc, head) {
+    acc++;
+    expect(head).toBe(acc);
+    return acc;
+  }, 0);
 
-function reduceTest(){
+  expect(count).toBe(3);
 
-  it('should run a reducer function for every con in the list, front to back', function(){
+});
 
-    let list = new Con(1, new Con(2, new Con(3)));
+test('the value returned by the reducer function is the accumulation of all cons in list', function () {
 
-    let count = list.reduce(function(acc, head){
-      acc++;
-      assert(head === acc, 'cons is front to back.');
-      return acc;
-    }, 0);
+  let list = new Con(1, new Con(2, new Con(3)));
 
-    assert(count === 3, 'count is 3');
+  let result = list.reduce((a, h) => a + h, 0);
 
-  });
+  expect(result).toBe(6);
+});
 
-  it('the value returned by the reducer function is the accumulation of all cons in list', function(){
+test('should run a reducer function for every con in the list, back to front', function () {
 
-    let list = new Con(1, new Con(2, new Con(3)));
+  let list = new Con(1, new Con(2, new Con(3)));
+  let length = list.length();
 
-    let result = list.reduce((a, h) => a + h, 0);
+  let count = list.reduceRight(function (idx, head) {
+    expect(length - head).toBe(idx);
+    return ++idx;
+  }, 0);
 
-    assert(result === 6, 'list reduced to 6');
-  });
-}
+  expect(count).toBe(3);
 
-function reduceRightTest(){
+});
 
-  it('should run a reducer function for every con in the list, back to front', function(){
+test('the value returned by the reducer function is the accumulation of all cons in list', function () {
 
-    let list = new Con(1, new Con(2, new Con(3)));
-    let length = list.length();
+  let list = new Con(1, new Con(2, new Con(3)));
 
-    let count = list.reduceRight(function(idx, head){
-      assert(length - head === idx, 'cons is front to back.');
-      return ++idx;
-    }, 0);
+  let result = list.reduceRight((a, h) => a + h, 0);
 
-    assert(count === 3, 'count is 3');
-
-  });
-
-  it('the value returned by the reducer function is the accumulation of all cons in list', function(){
-
-    let list = new Con(1, new Con(2, new Con(3)));
-
-    let result = list.reduceRight((a, h) => a + h, 0);
-
-    assert(result === 6, 'list reduced to 6');
-  });
-
-
-}
+  expect(result).toBe(6, 'list reduced to 6');
+});

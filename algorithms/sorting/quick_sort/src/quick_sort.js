@@ -62,7 +62,3 @@ function swap(array, leftIdx, rightIdx){
   array[leftIdx] = array[rightIdx];
   array[rightIdx] = tmp;
 }
-
-let a = [9, 4, 6, 1, 4, 6, 8, 8, 0, 1 ,2];
-quicksort(a);
-console.log(a);

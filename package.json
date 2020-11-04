@@ -1,8 +1,10 @@
 {
-  "name": "project-euler",
+  "name": "code-challenges",
   "version": "1.0.0",
-  "description": "Project Euler solutions",
-  "main": "index.js",
+  "description": "Algorithms, data structures & code challenges.",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:JordanMajd/code-challenges.git"
@@ -13,11 +15,7 @@
     "url": "https://github.com/JordanMajd/code-challenges/issues"
   },
   "homepage": "https://github.com/JordanMajd/code-challenges#readme",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha"
-  },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "jest": "^25.1.0"
   }
 }

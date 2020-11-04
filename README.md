@@ -1,25 +1,63 @@
 # Code Challenges
 
-As a programmer, it is important to continue to challenge myself daily. The ability to problem solve is foundational to being an excellent developer. Understanding data structures and algorithms opens doors to new solutions. Different languages expose varying design paradigms and shed light on alternative thought processes to solve problems. This repository serves as a place for me to improve on my understanding of:
+As a programmer, it is important to continue to challenge myself daily. The ability to problem solve is foundational to being an excellent developer. Understanding data structures and algorithms opens doors to new solutions and sheds light on alternative thought processes to solve problems. This repository serves as a place for me to improve on my understanding of:
 
-- Problem solving.
-- Data structures.
 - Algorithms.
-- Languages & Paradigms.
+- Data structures.
+- Problem solving.
 
-Currently all code is written using Javascript. As I aggregate code, and projects from the last several years this repository will be reorganized to include solutions in other languages.
+## Getting Started
 
-# Topics
+Ensure node and npm are installed, then install dependencies by running:
 
-## Data Structures
+```bash
+npm install
+```
 
-- [Functional Linked List](/data_structures/functional_linked_list/)
+To run a set of tests:
 
-## Algorithms
+```sh
+# run all tests
+npm test
+
+# run all tests for topic
+npm test algorithms/sorting/
+
+# run any test including binary_search
+npm test binary_search
+
+# run specific test
+npm test binary_search_2.test.js
+```
+
+## Topics
+
+### Algorithms
 
 - [Ripple Carry Adder](/algorithms/ripple_carry_adder)
 
-## Challenges
+#### Searching
+
+- [Binary Search](/algorithms/searching/binary_search)
+
+#### Sorting
+
+- [Bubble Sort](/algorithms/sorting/bubble_sort)
+- [Merge Sort](/algorithms/sorting/merge_sort)
+- [Quick Sort](/algorithms/sorting/quick_sort)
+- [Selection Sort](/algorithms/sorting/selection_sort)
+
+### Data Structures
+
+- [Functional Linked List](/data_structures/functional_linked_list/)
+
+### Interviews
+
+These are questions that I've encountered in interviews.
+
+- [Justify](/interviews/justify)
+
+### Challenges
 
 - [Project Euler](/project_euler/)
 
